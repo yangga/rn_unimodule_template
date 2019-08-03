@@ -23,6 +23,12 @@ target 'rn_unimodule_template' do
     # use unimodules
     use_unimodules!
 
+    pod 'react-native-version-number', :path => '../node_modules/react-native-version-number'
+
+    pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+    pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+
     post_install do |installer|
         installer.pods_project.targets.each do |target|
             if target.name == "React"

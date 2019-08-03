@@ -8,6 +8,8 @@ PODS:
   - EXFileSystem (6.0.0):
     - UMCore
     - UMFileSystemInterface
+  - EXKeepAwake (6.0.0):
+    - UMCore
   - EXPermissions (6.0.0):
     - UMCore
     - UMPermissionsInterface
@@ -18,6 +20,8 @@ PODS:
   - glog (0.3.5)
   - React (0.59.9):
     - React/Core (= 0.59.9)
+  - react-native-version-number (0.3.6):
+    - React
   - React/Core (0.59.9):
     - yoga (= 0.59.9.React)
   - React/CxxBridge (0.59.9):
@@ -61,6 +65,10 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNDeviceInfo (2.3.2):
+    - React
+  - RNLocalize (1.1.4):
+    - React
   - UMBarCodeScannerInterface (3.0.0)
   - UMCameraInterface (3.0.0)
   - UMConstantsInterface (3.0.0)
@@ -83,9 +91,11 @@ DEPENDENCIES:
   - EXAppLoaderProvider (from `../node_modules/expo-app-loader-provider/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
+  - EXKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-version-number (from `../node_modules/react-native-version-number`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -94,6 +104,8 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
   - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
   - UMConstantsInterface (from `../node_modules/unimodules-constants-interface/ios`)
@@ -124,6 +136,9 @@ EXTERNAL SOURCES:
   EXFileSystem:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-file-system/ios"
+  EXKeepAwake:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-keep-awake/ios"
   EXPermissions:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-permissions/ios"
@@ -133,6 +148,12 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-version-number:
+    :path: "../node_modules/react-native-version-number"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
+  RNLocalize:
+    :path: "../node_modules/react-native-localize"
   UMBarCodeScannerInterface:
     :path: !ruby/object:Pathname
     path: "../node_modules/unimodules-barcode-scanner-interface/ios"
@@ -178,10 +199,14 @@ SPEC CHECKSUMS:
   EXAppLoaderProvider: 7a8185228d8ba9e689a0e2d6d957fe9bdd49c8a0
   EXConstants: 5d81e84ca71b9a552529889cc798b4a04e9e22b3
   EXFileSystem: a5a7b8409e7d11f3948804e674ea91720fa84cd5
+  EXKeepAwake: e7cb6516675052b12a7d23291e33078b4239653a
   EXPermissions: 99e52dc3e5f8e55153f1958004f6df2a30a1f2f5
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
+  react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
+  RNDeviceInfo: 17e34f6dd902f08d88cbe2c0b7a01be948d43641
+  RNLocalize: 62a949d2ec5bee0eb8f39a80a48f01e2f4f67080
   UMBarCodeScannerInterface: 84ea2d6b58ff0dc27ef9b68bab71286be18ee020
   UMCameraInterface: 26b26005d1756a0d5f4f04f1e168e39ea9154535
   UMConstantsInterface: 038bacb19de12b6fd328c589122c8dc977cccf61
@@ -196,6 +221,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: 8664abd37a00715727e60df9ecd65e42ba47b548
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: 4207ec87d74ab0e07316097fc8c5c3a6ea13debc
+PODFILE CHECKSUM: 53c5fa9be36b2b920b9716fe358a18bd50be244b
 
 COCOAPODS: 1.6.1

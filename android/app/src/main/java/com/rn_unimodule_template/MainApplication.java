@@ -3,6 +3,9 @@ package com.rn_unimodule_template;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactcommunity.rnlocalize.RNLocalizePackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.apsl.versionnumber.RNVersionNumberPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -29,6 +32,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNLocalizePackage(),
+            new RNDeviceInfo(),
+            new RNVersionNumberPackage(),
           new ModuleRegistryAdapter(mModuleRegistryProvider)
       );
     }
