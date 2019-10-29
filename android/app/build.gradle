@@ -103,7 +103,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.rn_unimodule_template"
+        applicationId "com.yourappidhere"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
