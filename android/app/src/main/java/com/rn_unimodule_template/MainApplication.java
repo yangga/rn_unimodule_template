@@ -6,17 +6,9 @@ import android.content.Context;
 import com.facebook.react.BuildConfig;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.PackageList;
-import com.reactnativecommunity.geolocation.GeolocationPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
-import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
-import com.reactcommunity.rnlocalize.RNLocalizePackage;
-import com.learnium.RNDeviceInfo.RNDeviceInfo;
-import com.apsl.versionnumber.RNVersionNumberPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.airbnb.android.react.maps.MapsPackage;
 
 import com.rn_unimodule_template.generated.BasePackageList;
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
@@ -40,7 +32,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
-      packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
+
+      // Packages that cannot be autolinked yet can be added manually here, for example:
+      // packages.add(new MyReactNativePackage());
+
+      // Add unimodules
+      List<ReactPackage> unimodules = Arrays.<ReactPackage>asList(
+              new ModuleRegistryAdapter(mModuleRegistryProvider)
+      );
+      packages.addAll(unimodules);
       return packages;
     }
 
