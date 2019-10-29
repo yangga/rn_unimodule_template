@@ -1,7 +1,7 @@
 # React Native Template Project with Unimdules
 
 ## Why did I make this project?
-There is no ios/android detached project if you start with EXPO cli. You don't need detached project if you develop very simple project. But, eventually you need detached one because you may need to install some native modules. The other hands, you can also detach the project yourself after started with EXPO cli. I know that, but...I dislike it. It's pretty complicated.
+There is no ios/android detached project when you start with EXPO cli. You don't need detached project when you develop very simple project. But, eventually you need detached one because you may need to install some native modules. The other hands, you can also detach the project yourself after started with EXPO cli. I know that, but...I dislike it. It's pretty complicated.
 
 ## What is the Unimodule?
 https://github.com/unimodules/react-native-unimodules
