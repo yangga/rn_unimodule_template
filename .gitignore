@@ -62,6 +62,7 @@ buck-out/
 
 # VSCode
 .vscode/ipch
+.vscode/settings.json
 
 # CocoaPods
 /ios/Pods/
