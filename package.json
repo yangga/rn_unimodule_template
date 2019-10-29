@@ -3,33 +3,40 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "test": "jest",
+    "lint": "eslint .",
+    "postinstall": "jetify"
   },
   "dependencies": {
-    "expo-asset": "^6.0.0",
-    "expo-constants": "^6.0.0",
-    "expo-file-system": "^6.0.0",
-    "expo-keep-awake": "^6.0.0",
+    "expo-asset": "^7.0.0",
+    "expo-constants": "^7.0.1",
+    "expo-file-system": "^7.0.0",
+    "expo-keep-awake": "^7.0.0",
     "i18n-js": "^3.3.0",
     "lodash": "^4.17.15",
-    "react": "16.8.3",
-    "react-native": "0.59.9",
+    "react": "16.9.0",
+    "react-native": "0.61.2",
     "react-native-device-info": "^2.3.2",
     "react-native-localize": "^1.1.4",
-    "react-native-unimodules": "^0.5.2",
+    "react-native-unimodules": "^0.7.0-rc.1",
     "react-native-version-number": "^0.3.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
-    "@babel/runtime": "^7.5.5",
-    "babel-jest": "^24.8.0",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
-    "jest": "^24.8.0",
-    "metro-react-native-babel-preset": "^0.55.0",
-    "react-test-renderer": "16.8.3"
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "jetifier": "^1.6.4",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react-test-renderer": "16.9.0"
   },
   "jest": {
     "preset": "react-native"

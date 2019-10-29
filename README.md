@@ -7,6 +7,14 @@ There is no ios/android detached project if you start with EXPO cli. You don't n
 https://github.com/unimodules/react-native-unimodules
 
 ## Get started !?
+
+### Replacing some texts
+
+#### Find 'com.yourappidhere' and replace by your application ID
+> ie. 'com.google.verysexyapp'
+#### Find 'yourappnamehere' and replace by your appliation name
+> ie. 'VerySexyApp'
+
 ### javascript side
 ```
 yarn install
